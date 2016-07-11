@@ -10,9 +10,17 @@
         //filterfunction?
         stringArray.forEach(function(word){
             if(word.length > 1) {
-                words[word] = 1;
+                if (words[word]) {
+                    words[word]++;
+                } else {
+                    words[word] = 1;
+                }
+
             }
+
         });
+
+
 
         console.log(words); //TODO DELETE
 
