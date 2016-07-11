@@ -1,20 +1,26 @@
 (function(){
     'use strict';
 
-    function wordFrequency(stringArgument){
-        var string = stringArgument;
+    function wordFrequency(string){
         var stringArray = string.split(' ');
-        console.log(stringArray); //TODO DELETE
 
 
-        var wordsArray = [];
+        var words = {};
 
+        //filterfunction?
         stringArray.forEach(function(word){
             if(word.length > 1) {
-                wordsArray.push(word);
+                words[word] = 1;
             }
         });
-        console.log(wordsArray); //TODO DELETE
+
+        console.log(words); //TODO DELETE
+
+
+
+
+
+        //go into wordsArray and count the number of same words.
 
 
 
@@ -29,6 +35,8 @@
 
 
 
+
+        //{wordPropertyValue: countPropertyValue}
 
     }
 
